@@ -3,6 +3,7 @@ use std::error::Error;
 use crate::reveal::Reveal;
 use crate::slides::Slides;
 
+mod common;
 mod reveal;
 mod slides;
 

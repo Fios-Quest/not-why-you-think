@@ -1,14 +1,5 @@
 use dioxus::prelude::*;
-
-#[component]
-fn Step(step: String) -> Element {
-    rsx! {
-        li {
-            class: "fragment",
-            {step}
-        }
-    }
-}
+use crate::common::item::Item;
 
 #[component]
 pub fn Speed() -> Element {
@@ -21,20 +12,20 @@ pub fn Speed() -> Element {
             section {
                 h2 { "New TypeScript Project" }
                 ol {
-                    Step { step: "Install and configure TypeScript", }
-                    Step { step: "Install and configure a linter", }
-                    Step { step: "Install and configure a style checker", }
-                    Step { step: "Install and configure a testing framework", }
-                    Step { step: "Fiddle with all the configurations", }
-                    Step { step: "Start working on the project" }
+                    Item { content: "Install and configure TypeScript", }
+                    Item { content: "Install and configure a linter", }
+                    Item { content: "Install and configure a style checker", }
+                    Item { content: "Install and configure a testing framework", }
+                    Item { content: "Fiddle with all the configurations", }
+                    Item { content: "Start working on the project" }
                 }
             }
 
             section {
                 h2 { "New Rust Project" }
                 ol {
-                    Step { step: "`cargo new`" }
-                    Step { step: "Start working on the project"}
+                    Item { content: "`cargo new`" }
+                    Item { content: "Start working on the project"}
                 }
             }
         }
