@@ -24,6 +24,8 @@ pub fn Reveal() -> Element {
                 center: true,
                 hash: true,
 
+                width: 1440,
+
                 plugins: [Zoom, Notes, Search, Markdown, Highlight],
             }});
             "

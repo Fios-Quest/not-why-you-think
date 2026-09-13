@@ -26,7 +26,7 @@ pub fn ItsMemorySafe() -> Element {
 
         section {
             section {
-                h2 { "Java, JavaScript, Go, PHP, Python, C#, "}
+                h2 { "Java, JavaScript, Go, PHP, Python, etc"}
             }
 
             ItsFast {}

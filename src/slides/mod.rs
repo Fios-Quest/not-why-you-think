@@ -1,5 +1,6 @@
 mod title;
 mod usual_reasons;
+mod boring;
 
 use dioxus::prelude::*;
 
@@ -10,6 +11,7 @@ pub fn Slides() -> Element {
             div { class: "slides",
                 title::Title {}
                 usual_reasons::TheUsualReasons {}
+                boring::ItsBoring {}
             }
         }
     }
