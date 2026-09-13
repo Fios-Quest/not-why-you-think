@@ -3,7 +3,10 @@
 [web.app]
 
 # HTML title tag content
-title = "why-rust"
+title = "Not Why You Think"
+
+# when deployed the path is different
+base_path = "not-why-you-think"
 
 # include `assets` in web platform
 [web.resource]
