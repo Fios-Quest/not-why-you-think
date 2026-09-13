@@ -1,4 +1,6 @@
+mod bonus;
 mod boring;
+mod conclusion;
 mod speed;
 mod title;
 mod tooling;
@@ -16,6 +18,8 @@ pub fn Slides() -> Element {
                 boring::ItsBoring {}
                 speed::Speed {}
                 tooling::Tooling {}
+                conclusion::Conclusion {}
+                bonus::Bonus {}
             }
         }
     }
