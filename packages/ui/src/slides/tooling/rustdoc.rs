@@ -43,10 +43,7 @@ pub fn RustDoc() -> Element {
 
             section {
                 pre {
-                    code {
-                        "data-trim": true,
-                        {DOC_TEST_ERROR}
-                    }
+                    code { "data-trim": true, {DOC_TEST_ERROR} }
                 }
             }
         }
