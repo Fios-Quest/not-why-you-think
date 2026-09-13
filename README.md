@@ -1,6 +1,8 @@
 Why you should use Rust? It's not why you think
 ===============================================
 
+> See the slides at https://fios-quest.com/not-why-you-think/
+
 Many things are banded around as great reasons to chose Rust, and they're not wrong... they're just not particularly 
 strong reasons.
 

@@ -1,6 +1,7 @@
 [workspace]
 resolver = "3"
 members = [
+    "example/add_one_example",
     "packages/ui",
     "packages/web",
 ]
