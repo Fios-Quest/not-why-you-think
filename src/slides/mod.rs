@@ -1,6 +1,7 @@
 mod title;
 mod usual_reasons;
 mod boring;
+mod speed;
 
 use dioxus::prelude::*;
 
@@ -12,6 +13,7 @@ pub fn Slides() -> Element {
                 title::Title {}
                 usual_reasons::TheUsualReasons {}
                 boring::ItsBoring {}
+                speed::Speed {}
             }
         }
     }
