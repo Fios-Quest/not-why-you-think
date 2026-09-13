@@ -8,29 +8,24 @@ const RUST_IS_EASY_LINK: Asset = asset!("/assets/rust-is-easy-link.png");
 pub fn RustC() -> Element {
     rsx! {
         section {
-            section { h2 { "rustc" } }
-
-            section { h3 { "Rust is Easy - Tris Oaten" } }
-
             section {
-                img {
-                    width: "900px",
-                    src: RUST_IS_EASY,
-                }
+                h2 { "rustc" }
             }
 
             section {
-                img {
-                    width: "900px",
-                    src: RUST_IS_EASY_FUNCTION,
-                }
+                h3 { "Rust is Easy - Tris Oaten" }
             }
 
-            section  {
-                img {
-                    width: "400px",
-                    src: RUST_IS_EASY_LINK,
-                }
+            section {
+                img { width: "900px", src: RUST_IS_EASY }
+            }
+
+            section {
+                img { width: "900px", src: RUST_IS_EASY_FUNCTION }
+            }
+
+            section {
+                img { width: "400px", src: RUST_IS_EASY_LINK }
             }
         }
     }

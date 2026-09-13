@@ -20,7 +20,9 @@ mod tests {
 pub fn Testing() -> Element {
     rsx! {
         section {
-            section { h3 { "Testing" } }
+            section {
+                h3 { "Testing" }
+            }
             section {
                 pre {
                     code {
@@ -30,7 +32,7 @@ pub fn Testing() -> Element {
                         {TEST_EXAMPLE}
                     }
                 }
-            } 
+            }
         }
     }
 }

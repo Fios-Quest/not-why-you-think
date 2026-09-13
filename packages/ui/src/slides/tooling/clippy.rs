@@ -13,28 +13,21 @@ let average = arr.iter().sum::<f64>() / arr.len() as f64;
 
 #[component]
 pub fn Clippy() -> Element {
-
     rsx! {
         section {
-            section { h3 { "Clippy" } }
+            section {
+                h3 { "Clippy" }
+            }
 
             section {
                 pre {
-                    code {
-                        class: "language-rust",
-                        "data-trim": true,
-                        {BEFORE}
-                    }
+                    code { class: "language-rust", "data-trim": true, {BEFORE} }
                 }
             }
 
             section {
                 pre {
-                    code {
-                        class: "language-rust",
-                        "data-trim": true,
-                        {AFTER}
-                    }
+                    code { class: "language-rust", "data-trim": true, {AFTER} }
                 }
             }
         }

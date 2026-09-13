@@ -35,8 +35,7 @@ pub fn RustVsTypeScript() -> Element {
                     {TYPESCRIPT}
                 }
             }
-            div {
-                class: "fragment",
+            div { class: "fragment",
                 "Rust"
                 pre {
                     code {
@@ -54,7 +53,6 @@ pub fn RustVsTypeScript() -> Element {
 
 #[component]
 pub fn ItsBoring() -> Element {
-
     rsx! {
         section {
             section {

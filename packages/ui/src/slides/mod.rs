@@ -1,8 +1,8 @@
-mod title;
-mod usual_reasons;
 mod boring;
 mod speed;
+mod title;
 mod tooling;
+mod usual_reasons;
 
 use dioxus::prelude::*;
 

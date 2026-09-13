@@ -17,7 +17,9 @@ pub fn add_one(n: u32) -> u32 {
 pub fn RustDoc() -> Element {
     rsx! {
         section {
-            section { h2 { "rustdoc" } }
+            section {
+                h2 { "rustdoc" }
+            }
             section {
                 pre {
                     code {

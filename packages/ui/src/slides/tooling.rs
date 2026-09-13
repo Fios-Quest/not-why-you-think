@@ -1,16 +1,18 @@
 use dioxus::prelude::*;
 
-mod rustc;
-mod testing;
-mod rustfmt;
 mod clippy;
+mod rustc;
 mod rustdoc;
+mod rustfmt;
+mod testing;
 
 #[component]
 pub fn Tooling() -> Element {
     rsx! {
 
-        section { h2 { "Tooling" } }
+        section {
+            h2 { "Tooling" }
+        }
 
         rustc::RustC {}
 

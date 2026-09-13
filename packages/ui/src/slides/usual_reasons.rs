@@ -8,11 +8,11 @@ pub fn ItsFast() -> Element {
         }
 
         section {
-            h2 { "C++, Zig, C"}
+            h2 { "C++, Zig, C" }
         }
 
         section {
-            h2 { "Assembly"}
+            h2 { "Assembly" }
         }
     }
 }
@@ -26,7 +26,7 @@ pub fn ItsMemorySafe() -> Element {
 
         section {
             section {
-                h2 { "Java, JavaScript, Go, PHP, Python, etc"}
+                h2 { "Java, JavaScript, Go, PHP, Python, etc" }
             }
 
             ItsFast {}
@@ -38,13 +38,21 @@ pub fn ItsMemorySafe() -> Element {
 pub fn ItsBoth() -> Element {
     rsx! {
         section {
-            section { h2 { "It's both!" } }
+            section {
+                h2 { "It's both!" }
+            }
 
-            section { h2 { "Rust is about 4x faster than TypeScript" } }
+            section {
+                h2 { "Rust is about 4x faster than TypeScript" }
+            }
 
-            section { h2 { "Who cares?" } }
+            section {
+                h2 { "Who cares?" }
+            }
 
-            section { h2 { "Not a defining feature" } }
+            section {
+                h2 { "Not a defining feature" }
+            }
         }
     }
 }

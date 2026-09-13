@@ -5,10 +5,7 @@ pub fn RustFmt() -> Element {
     rsx! {
         section {
             h2 { "rustfmt" }
-            p {
-                class: "fragment",
-                "cargo fmt"
-            }
+            p { class: "fragment", "cargo fmt" }
         }
     }
 }
