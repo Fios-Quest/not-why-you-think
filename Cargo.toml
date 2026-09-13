@@ -1,21 +1,13 @@
-[package]
-name = "why-rust"
-version = "0.1.0"
-authors = ["Daniel Mason <daniel@danielmason.com>"]
-edition = "2021"
+[workspace]
+resolver = "3"
+members = [
+    "packages/ui",
+    "packages/web",
+]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace.dependencies]
+dioxus = { version = "0.7.1" }
 
-[dependencies]
-dioxus = { version = "0.7.1", features = [] }
+# workspace
+ui = { path = "packages/ui" }
 
-[build-dependencies]
-qrcode-generator = "6.1.0"
-
-[dev-dependencies]
-
-[features]
-default = ["web"]
-web = ["dioxus/web"]
-desktop = ["dioxus/desktop"]
-mobile = ["dioxus/mobile"]

@@ -7,4 +7,4 @@
 **/*.rs.bk
 
 # Files created at build time
-assets/rust-is-easy-link.png
+packages/ui/assets/rust-is-easy-link.png

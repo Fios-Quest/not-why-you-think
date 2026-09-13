@@ -1,11 +1,7 @@
 use dioxus::prelude::*;
 use std::error::Error;
-use crate::reveal::Reveal;
-use crate::slides::Slides;
-
-mod common;
-mod reveal;
-mod slides;
+use ui::reveal::Reveal;
+use ui::slides::Slides;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/main.css");
