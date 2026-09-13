@@ -24,7 +24,7 @@ jobs:
       - run: cargo binstall dioxus-cli --force
 
       - name: Build Project 🎁
-        run: dx bundle --platform web --ssg && cp ./${{ env.outDir }}/index.html ./${{ env.outDir }}/404.html
+        run: dx bundle --package web --release
 
       - uses: actions/upload-artifact@v4
         if: "${{ github.ref == 'refs/heads/main' }}"
