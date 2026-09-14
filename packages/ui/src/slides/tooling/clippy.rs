@@ -65,7 +65,7 @@ pub fn Clippy() -> Element {
                         "Still use them anyway".into(),
                         "This code takes a collection of floats, sums them, divides by length".into(),
                         "Length is a usize, usually u64".into(),
-                        "Float only represents integers up to 2^55".into(),
+                        "Float only represents integers up to 2^52".into(),
                         "It will 'work', but may not be exactly right".into(),
                     ],
                 }

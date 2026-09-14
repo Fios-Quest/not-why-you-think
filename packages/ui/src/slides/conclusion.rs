@@ -14,10 +14,10 @@ pub fn Conclusion() -> Element {
             }
 
             Notes { notes: vec![
-                                                                                                                                                                                                                                                                    "No surprises".into(),
-                                                                                                                                                                                                                                                                    "Build fast".into(),
-                                                                                                                                                                                                                                                                    "Tooling lets you focus".into(),
-                                                                                                                                                                                                                                                                ] }
+                "No surprises".into(),
+                "Build fast".into(),
+                "Tooling lets you focus".into(),
+            ] }
         }
     }
 }

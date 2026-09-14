@@ -25,8 +25,8 @@ pub fn RustDoc() -> Element {
                 h2 { "rustdoc" }
 
                 Notes { notes: vec![
-                                                                "Rustdoc is where things get _really_ interesting".into(),
-                                                            ] }
+                                                                                                                                                                                                                                                                                            "Rustdoc is where things get _really_ interesting".into(),
+                                                                                                                                                                                                                                                                                        ] }
             }
 
             section {
@@ -41,7 +41,7 @@ pub fn RustDoc() -> Element {
 
                 Notes {
                     notes: vec![
-                        "Here's out add_one function again".into(),
+                        "Here's our add_one function again".into(),
                         "We add a doc block above with whatever description and examples we want".into(),
                     ],
                 }

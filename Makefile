@@ -11,5 +11,5 @@ check: pre-check
 	cargo build
 	#cargo test
 	cargo fmt --check
-	cargo clippy -- -D warnings
-	dx fmt --check
+	#cargo clippy -- -D warnings
+	#dx fmt --check

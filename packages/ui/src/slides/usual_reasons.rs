@@ -25,8 +25,8 @@ pub fn ItsMemorySafe() -> Element {
             h2 { "It's memory safe!" }
 
             Notes { notes: vec![
-                                                                                                                                                                                                                                                                    "Right, it's memory safe but...".into(),
-                                                                                                                                                                                                                                                                ] }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    "Right, it's memory safe but...".into(),
+                                                                                                                                                                                                                                                                                                                                                                                                                                                ] }
         }
 
         section {
@@ -92,8 +92,8 @@ pub fn ItsBoth() -> Element {
                 h2 { "Not a defining feature" }
 
                 Notes { notes: vec![
-                                                                                                                                                                                                                                                                                                                                    "Not a defining feature".into()
-                                                                                                                                                                                                                                                                                                                                ] }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "Not a defining feature".into()
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ] }
             }
         }
     }
