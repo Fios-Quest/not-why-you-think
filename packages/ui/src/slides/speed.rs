@@ -1,4 +1,5 @@
 use crate::common::item::Item;
+use crate::common::notes::Notes;
 use dioxus::prelude::*;
 
 #[component]
@@ -23,6 +24,18 @@ pub fn Speed() -> Element {
                     Item { content: "Fiddle with all the configurations" }
                     Item { content: "Start working on the project" }
                 }
+
+                Notes {
+                    notes: vec![
+                        "TypeScript".into(),
+                        "Linter".into(),
+                        "Style Checker".into(),
+                        "Testing Framework".into(),
+                        "Fiddle".into(),
+                        "Get to work".into(),
+                        "Takes me an hour".into(),
+                    ],
+                }
             }
 
             section {
@@ -30,6 +43,12 @@ pub fn Speed() -> Element {
                 ol {
                     Item { content: "`cargo new`" }
                     Item { content: "Start working on the project" }
+
+                    Notes { notes: vec![
+                                                                                                                                                                                                                                                                                                                                                                                                    "Cargo new".into(),
+                                                                                                                                                                                                                                                                                                                                                                                                    "Get to work".into(),
+                                                                                                                                                                                                                                                                                                                                                                                                    "Comes with all tooling".into(),
+                                                                                                                                                                                                                                                                                                                                                                                                ] }
                 }
             }
         }

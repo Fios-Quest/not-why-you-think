@@ -1,3 +1,4 @@
+use crate::common::notes::Notes;
 use dioxus::prelude::*;
 
 const TYPESCRIPT: &str = r#"
@@ -11,7 +12,7 @@ const getPokemon = async (id: number): Promise<Result<Pokemon, Error>> => {
 "#;
 
 const RUST: &str = r#"
-async fn get_pokemon(id: NonZero<u16>) -> Result<User, GetPokemonError> {
+async fn get_pokemon(id: u16) -> Result<User, GetPokemonError> {
     let pokemon: Pokemon = get(format!("https://pokeapi.co/api/v2/pokemon/{id}")).await?
         .json().await?;
     if pokemon.id == id {
@@ -39,13 +40,25 @@ pub fn RustVsTypeScript() -> Element {
                 "Rust"
                 pre {
                     code {
-                        class: "language-rust",
+                        class: "fragment language-rust",
                         "data-trim": true,
-                        "data-fragment-index": "1",
+                        "data-fragment-index": "0",
                         "data-line-numbers": true,
                         {RUST}
                     }
                 }
+            }
+
+            Notes {
+                notes: vec![
+                    "Picking on TS again".into(),
+                    "Perfectly good TypeScript".into(),
+                    "3 errors".into(),
+                    "4 if you include a duplicate".into(),
+                    "Maybe more".into(),
+                    "number, exceptions, parsing".into(),
+                    "Rust for comparison".into(),
+                ],
             }
         }
     }
@@ -57,6 +70,14 @@ pub fn ItsBoring() -> Element {
         section {
             section {
                 h2 { "It's Boring" }
+
+                Notes {
+                    notes: vec![
+                        "Rust is boring".into(),
+                        "Or unsurprising".into(),
+                        "Let's pick on TypeScript again".into(),
+                    ],
+                }
             }
 
             RustVsTypeScript {}

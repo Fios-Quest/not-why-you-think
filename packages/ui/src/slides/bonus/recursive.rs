@@ -4,10 +4,10 @@ use dioxus::prelude::*;
 pub fn Recursive() -> Element {
     let slide = include_str!("recursive.rs");
     rsx! {
-         section {
-            h3 { "Bonus" }
+        section {
+            h3 { "RevealJS in Dioxus" }
             pre {
-                code { class: "fragment language-rust", "data-trim": true, {slide} }
+                code { class: "language-rust", "data-trim": true, {slide} }
             }
         }
     }
