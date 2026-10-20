@@ -2,6 +2,7 @@
 resolver = "3"
 members = [
     "example/add_one_example",
+    "example/pokemon",
     "packages/ui",
     "packages/web",
 ]
