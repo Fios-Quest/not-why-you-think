@@ -12,7 +12,7 @@ const getPokemon = async (id: number): Promise<Result<Pokemon, Error>> => {
 "#;
 
 const RUST: &str = r#"
-async fn get_pokemon(id: u16) -> Result<User, GetPokemonError> {
+async fn get_pokemon(id: u16) -> Result<Pokemon, GetPokemonError> {
     let pokemon: Pokemon = get(format!("https://pokeapi.co/api/v2/pokemon/{id}")).await?
         .json().await?;
     if pokemon.id == id {
